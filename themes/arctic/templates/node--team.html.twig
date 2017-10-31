@@ -1,0 +1,10 @@
+{{ attach_library('classy/node') }}
+<div id="team-container">
+  <div id="team-header">
+    <img src="{{ file_url(content.field_team_image['#items'].entity.uri.value) }}" />
+    <h2><div class="ag-outter"><div class="ag-inner"><img src="{{ file_url(content.field_team_icon['#items'].entity.uri.value) }}" /></div>{{ label }}</div></h2>
+  </div>
+  <div id="team-content">
+    {{ content.field_team_pla }}
+  </div>
+</div>

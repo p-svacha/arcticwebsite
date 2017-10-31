@@ -1,0 +1,52 @@
+<div id="main">
+	<div id="container">
+		<!-- HEADER  -->
+		<header>
+			<div id="header-container" class="background shadow transition">
+				<div id="header">
+					<div id="logo" class="transition">
+						<div id="arctic-title" class="transition">ArcticGaming</div>
+						<div id="arctic-slogan" class="transition">Swiss esports since 2015</div>
+					</div>
+					<div id="navigation" class="transition">
+						{{page.header}}
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- SPONSORS  -->
+		<section>
+			<div id="sponsor-container">
+				<div id="sponsor">
+						{{page.sponsor}}
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTENT  -->
+		<section>
+			<div id="content-container">
+				<div id="content">
+					{{page.content}}
+				</div>
+			</div>
+		</section>
+
+
+		<!-- FOOTER  -->
+		<footer>
+			<div id="footer">
+          <div class="footer" id="footer-left">
+            {{page.footerleft}}<br>
+            <a target="_blank" href="https://discord.gg/JPT3HPP"><img width="200" src="{{ base_path ~ directory }}/images/discord.png" alt="Join our discord"/></a>
+          </div>
+          <div class="footer" id="footer-center">
+            {{page.footer}}
+          </div>
+          <div class="footer" id="footer-right">
+            {{page.footerright}}
+          </div>
+			</div>
+		</footer>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+{{ attach_library('classy/node') }}
+  <div id="team-player">
+	<h2{{ title_attributes.addClass('node__title') }}><img alt="Switzerland" src="../{{ base_path ~ directory }}/images/flags/ch.png">{{ label }}</h2>
+	<div id="player-image"> {{ content.field_player_image}} </div>
+	<div id="player-icons">
+		{{ content.field_player_role }}
+		<!-- <a href="{{ content.field_player_twitch_url2.raw }}">
+			<img id="player-social-media" alt="Twitch" src="../{{ base_path ~ directory }}/images/sm_twitch.png">
+		</a> -->
+	</div>
+	<p> {{ content.body }} </p>
+	</div>

@@ -1,0 +1,14 @@
+name: Arctic
+type: theme
+description: Custom theme for Arctic Gaming
+core: 8.x
+base theme: classy
+libraries:
+  - arctic/usual
+regions:
+  header: Header
+  sponsor: Sponsor
+  content: Content
+  footer: Footer
+  footerleft: Footer Left
+  footerright: Footer Right
