@@ -1,0 +1,21 @@
+Issue: Drupal 8 MySQL Export has an issue. To solve, export the file as usual in MySQL, then edit the arctic.sql as follows.
+
+Change this:
+
+CREATE TABLE `key_value` (
+  `collection` varchar(128) CHARACTER SET ascii NOT NULL DEFAULT '' COMMENT 'A named collection of key and value pairs.'
+`value` longblob NOT NULL COMMENT 'The value.',
+  PRIMARY KEY (`collection`,`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Generic key-value storage table. See the state system for…'
+to this:
+
+CREATE TABLE `key_value` (
+  `collection` varchar(128) CHARACTER SET ascii NOT NULL DEFAULT '' COMMENT 'A named collection of key and value pairs.',
+  `name` varchar(128) CHARACTER SET ascii NOT NULL DEFAULT '' COMMENT 'The key of the key-value pair. As KEY is a SQL reserved keyword, name was chosen instead.',
+  `value` longblob NOT NULL COMMENT 'The value.',
+  PRIMARY KEY (`collection`,`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Generic key-value storage table. See the state system for';
+then remove this near the end to prevent another error:
+
+ALTER TABLE `key_value`
+ ADD `name` varchar(128) CHARACTER SET ascii NOT NULL DEFAULT '' COMMENT 'The key of the key-value pair. As KEY is a SQL reserved keyword, name was chosen instead.';
