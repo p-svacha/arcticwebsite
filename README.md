@@ -8,19 +8,18 @@ ArcticGaming Website
 
 ArcticGaming is a professional esports organisation in Switzerland. The aim of the orga is to push the limits of the Swiss scene and to provide a family to its players.
 
-![Website](https://imgur.com/a/NieUu)
+<img width="800" alt="website screen" src="https://imgur.com/a/NieUu">
 
 
-###Management
------
+## Management
 
 The organisation has 80 members and is an official Swiss organisation.
 
-![Board](https://imgur.com/a/mpPt7)
+<img width="600" alt="board screen" src="https://imgur.com/a/mpPt7">
 
 
-###Social Media
------
+## Social Media
+
 
 + [Facebook](https://www.facebook.com/arcticgamingch)
 + [Instagram](https://www.instagram.com/arcticgamingch/)
