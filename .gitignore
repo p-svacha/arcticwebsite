@@ -12,7 +12,6 @@
 # core
 
 # Core's dependencies are managed with Composer.
-vendor
 
 # Ignore configuration files that may contain sensitive information.
 
@@ -36,6 +35,3 @@ sites/simpletest
 # simpletest
 
 # Ignore core phpcs.xml and phpunit.xml.
-core/
-profiles/
-vendor/
