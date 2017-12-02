@@ -1,14 +1,28 @@
+/*COLOR CONSTANTS*/
+:root {
+    --arctic-dark: #0c121e;
+    --arctic-dark-transparent: #0c121eee;
+    --arctic-dark2: #26264D;
+    --arctic-dark3: #404080;
+    --arctic-white: #ffffff;
+    --arctic-white-transparent: #ffffff33;
+    --arctic-blue: #35356B;
+    --arctic-orange: #FF8401;
+    --arctic-orange-hover: #FF8401CC;
+}
+
+
 /*INITIAL STUFF*/
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #4b4b4b;
+  color: var(--arctic-white);
   letter-spacing: 1px;
-  background-image: url('../images/bg15.jpg');
+  background-image: url('../images/bg15b.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -57,7 +71,7 @@ body a{
 
 #arctic-title {
   font-size: 40px;
-  color: #00a2ff;
+  color: var(--arctic-white);
   height: 40px;
   margin-top: 20px;
 }
@@ -65,7 +79,7 @@ body a{
 #arctic-slogan {
   font-size: 24px;
   width: 100%;
-  color: #ff8401;
+  color: var(--arctic-orange);
   font-family: 'Dancing Script', cursive;
 }
 
@@ -80,7 +94,8 @@ body a{
 
 #header-container {
   width: 100%; /*width:1250px;*/
-  border-top: 3px solid #ff8401;
+  border-bottom: 3px solid var(--arctic-orange);
+  background: var(--arctic-dark);
   height: 120px;
   position: fixed;
   top: 0;
@@ -91,15 +106,16 @@ body a{
 }
 
 #content-container {
-  background: rgba(255, 255, 255, 1);
+  background: var(--arctic-dark);   
 }
 
 #sponsor-container {
   width: 100%;
-  height: 60px;
+  height: 40px;
   margin: 0 auto;
   padding: 25px 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--arctic-dark2);
+  opacity: 1;
   margin-top: 120px;
 }
 
@@ -181,10 +197,11 @@ hr {
 #logo {
   width: 20%;
   height: 150px;
-  background-image: url('../images/logo.png');
+  background-image: url('../images/logo_white.png');
   background-repeat: no-repeat;
   background-size: 100px;
   float: left;
+  color: var(--arctic-white);
 }
 
 /*NAVIGATION*/
@@ -205,28 +222,28 @@ hr {
   list-style-image: none;
   list-style-type: none;
   font-size: 20px;
-  color: #6a6258;
+  color: var(--arctic-white);
 }
 
 #navigation ul li a {
   text-decoration: none;
-  color: #6a6258;
+  color: var(--arctic-white);
   padding: 10px 15px;
   margin: 0 5px;
 }
 
 #navigation ul li a:hover {
-  background: rgba(255, 132, 1, 0.8);
-  color: white;
+  background: var(--arctic-orange-hover);
+  color: var(--arctic-dark);
 }
 
 /*#navigation li + li:before{content: " | ";}*/
 #navigation .is-active, #navigation .is-active:hover {
-  background-color: #ff8401;
-  color: white;
-  box-shadow: inset 0 0 1px #924b00;
-  -webkit-box-shadow: inset 0 0 1px #924b00;
-  -moz-box-shadow: inset 0 0 1px #924b00;
+  background-color: var(--arctic-orange);
+  color: var(--arctic-dark);
+  box-shadow: inset 0 0 1px var(--arctic-orange);
+  -webkit-box-shadow: inset 0 0 1px var(--arctic-orange);
+  -moz-box-shadow: inset 0 0 1px var(--arctic-orange);
 }
 
 #block-teammenu {
@@ -283,8 +300,10 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.5;
-  filter: grayscale(100%);
+  margin-top: -5px;
+  height: 60px;
+  width: auto;
+  opacity: 1;
 }
 
 #sponsor .view-sponsors img:hover {
@@ -420,7 +439,7 @@ hr {
 
 .view-frontpage .views-field-last-updated {
   position: absolute;
-  background-color: #00a2ff;
+  background-color: var(--arctic-dark2);;
   padding: 10px;
   text-align: center;
   font-weight: bold;
@@ -429,7 +448,7 @@ hr {
 .view-frontpage .views-field-title {
   position: absolute;
   margin: 80px 5px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--arctic-dark-transparent);
   padding: 6px;
   width: 254px;
   text-align: center;
@@ -457,19 +476,18 @@ hr {
   cursor: pointer;
   border-radius: 20px;
   margin: 0 5px;
-  background: rgba(39, 39, 39, 0.9);
-  color: white;
+  background: var(--arctic-dark3);
   box-shadow: 0 -1px 0 1px #1c1c1c;
   text-indent: -9999px;
 }
 
 .views_slideshow_pager_field .active {
-  background-color: #ff8401;
+  background-color: var(--arctic-orange);
   text-indent: -9999px;
 }
 
 .views-slideshow-controls-bottom {
-  background: rgba(39, 39, 39, 0.9);
+  background: var(--arctic-dark2);
   padding: 10px;
   margin-top: -5px;
   margin-bottom: 10px;
@@ -477,7 +495,7 @@ hr {
 
 .view-slideshow .views-field-title {
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--arctic-dark-transparent);
   padding: 6px 6px 30px 6px;
   width: 100%;
   text-align: center;
