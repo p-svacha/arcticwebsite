@@ -2,7 +2,7 @@
 :root {
     --arctic-dark: #0c121e;
     --arctic-dark-transparent: #0c121eee;
-    --arctic-dark2: #26264D;
+    --arctic-dark2: #1f1f33;
     --arctic-dark3: #404080;
     --arctic-white: #ffffff;
     --arctic-white-transparent: #ffffff33;
@@ -137,7 +137,7 @@ body a{
 }
 
 #content-container:after{
-  content: ".";
+  content: "";
   clear: both;
   display: block;
   height: 0px;
@@ -146,10 +146,12 @@ body a{
 #footer {
   text-align: justify;
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 25px;
-  background: rgba(39, 39, 39, 0.9)
+  bottom: 0;
+  background: var(--arctic-dark2);
+  position: relative;
 }
 
 /*HEADER TRANSFORMED*/
