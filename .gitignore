@@ -35,3 +35,4 @@ sites/simpletest
 # simpletest
 
 # Ignore core phpcs.xml and phpunit.xml.
+.idea/
