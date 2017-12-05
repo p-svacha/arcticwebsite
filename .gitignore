@@ -36,4 +36,4 @@ sites/simpletest
 
 # Ignore core phpcs.xml and phpunit.xml.
 .idea/
-sites/default/settings.php
+.sites/default/settings.php
