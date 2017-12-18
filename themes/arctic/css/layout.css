@@ -3,6 +3,7 @@
     --arctic-dark: #0c121e;
     --arctic-dark-transparent: #0c121eee;
     --arctic-dark2: #1f1f33;
+    --arctic-dark2-transparent: #1f1f33aa;
     --arctic-dark3: #404080;
     --arctic-white: #ffffff;
     --arctic-white-transparent: #ffffff33;
@@ -28,7 +29,7 @@ body {
 
 body a{
   text-decoration: none;
-  color: #4b4b4b;
+  color: var(--arctic-white);
 }
 
 ::-moz-selection {
@@ -114,9 +115,17 @@ body a{
   height: 40px;
   margin: 0 auto;
   padding: 25px 0;
-  background: var(--arctic-dark2);
-  opacity: 1;
+  background: var(--arctic-dark2-transparent);
   margin-top: 120px;
+}
+
+#sponsor-container-bottom {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 25px 0;
+  background: var(--arctic-dark2-transparent);
+  margin-top: 0;
 }
 
 #header {
@@ -150,8 +159,54 @@ body a{
   margin: 0 auto;
   padding: 25px;
   bottom: 0;
-  background: var(--arctic-dark2);
+  background: var(--arctic-dark);
   position: relative;
+}
+
+#footer-wrapper {
+    width:1200px;
+    margin: 0 auto;
+}
+
+#footer-section {
+    width: 33%;
+    position: relative;
+    height: 50px;
+    float: left;
+}
+
+#footer-section h1 {
+    top: 30%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+#footer-section p {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: grey;
+}
+
+#footer-section a {
+    font-size: 16px;
+    color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer-section img {
+    height: 16px;
+    width: auto;
+    margin-top: 5px;
+}
+
+#footer-section a:hover {
+    color: white;
 }
 
 /*HEADER TRANSFORMED*/
@@ -263,27 +318,27 @@ hr {
   list-style-image: none;
   list-style-type: none;
   font-size: 20px;
-  color: #6a6258;
+  color: var(--arctic-white);
 }
 
 #block-teammenu ul li a {
   text-decoration: none;
-  color: #6a6258;
+  color: var(--arctic-white);
   padding: 5px 10px;
   margin: 0 5px;
 }
 
 #block-teammenu ul li a:hover {
-  background: rgba(255, 132, 1, 0.8);
-  color: white;
+  background: var(--arctic-orange-hover);
+  color: var(--arctic-dark);
 }
 
 #block-teammenu .is-active, #block-teammenu .is-active:hover {
-  background-color: #ff8401;
-  color: white;
-  box-shadow: inset 0 0 1px #924b00;
-  -webkit-box-shadow: inset 0 0 1px #924b00;
-  -moz-box-shadow: inset 0 0 1px #924b00;
+  background-color: var(--arctic-orange);
+  color: var(--arctic-dark);
+  box-shadow: inset 0 0 1px var(--arctic-orange);
+  -webkit-box-shadow: inset 0 0 1px var(--arctic-orange);
+  -moz-box-shadow: inset 0 0 1px var(--arctic-orange);
 }
 
 /*SPONSOR*/
@@ -306,6 +361,7 @@ hr {
   height: 60px;
   width: auto;
   opacity: 1;
+  filter: grayscale(100%);
 }
 
 #sponsor .view-sponsors img:hover {
@@ -379,7 +435,7 @@ hr {
 #team-player h2 {
   float: left;
   width: 100%;
-  color: #ff8401;
+  color: var(--arctic-orange);
   margin-left: 5%;
   margin-bottom: 5%;
 }
@@ -393,6 +449,7 @@ hr {
 
 #team-player p {
   font-size: 14px;
+  color: var(--arctic-white);
 }
 
 #player-image {
@@ -408,7 +465,7 @@ hr {
   float: left;
   height: 100%;
   width: auto;
-  margin-top:;
+  color: var(--arctic-white);
 }
 
 #player-social-media {
@@ -422,6 +479,7 @@ hr {
   float: left;
   width: 100%;
   text-align: center;
+  color: var(--arctic-white);
 }
 
 /*.view-frontpage .views-row:first-child{width:100%; padding: 0;}*/
@@ -535,7 +593,6 @@ hr {
 
 .footer{
   width:30%;
-  float:left;
 }
 
 .view-results table{
@@ -552,7 +609,15 @@ hr {
   padding: 10px;
 }
 
-.view-results tr:nth-child(even) {background: #f2f2f2}
-.view-results tr:nth-child(odd) {background: #FFF}
+.view-results tr:nth-child(even) {
+    background: var(--arctic-dark2);
+}
 
-.view-results .views-field-field-date{width: 54px;}
+.view-results tr:nth-child(odd) {
+    background: var(--arctic-dark);
+}
+
+.view-results .views-field-field-date{
+    width: 54px;
+
+}
