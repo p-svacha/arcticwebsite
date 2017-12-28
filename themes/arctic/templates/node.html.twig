@@ -81,7 +81,8 @@
       <div class="node__meta">
         {{ author_picture }}
         <span{{ author_attributes }}>
-          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {% set createdDate = node.getCreatedTime|date('d.m.y') %}
+		  {% trans %}Submitted by {{ author_name }} on {{ createdDate }} {% endtrans %}	
         </span>
         {{ metadata }}
       </div>

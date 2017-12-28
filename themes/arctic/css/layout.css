@@ -29,7 +29,7 @@ body {
 
 body a{
   text-decoration: none;
-  color: var(--arctic-white);
+  color: var(--arctic-orange);
 }
 
 ::-moz-selection {
@@ -488,7 +488,7 @@ hr {
   width: 23%;
   margin: 0.5%;
   padding: 0.5%;
-  height: 100%;
+  height: 250px;
 }
 
 .view-frontpage .views-row .field--type-image {
@@ -497,9 +497,9 @@ hr {
   margin-right: 10px;
 }
 
-.view-frontpage .views-field-last-updated {
+.view-frontpage .views-field-created-1 {
   position: absolute;
-  background-color: var(--arctic-dark2);;
+  background-color: var(--arctic-dark2);
   padding: 10px;
   text-align: center;
   font-weight: bold;
@@ -620,4 +620,9 @@ hr {
 .view-results .views-field-field-date{
     width: 54px;
 
+}
+
+/*LOGIN*/
+.form-text {
+    color: black;
 }
