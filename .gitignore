@@ -38,3 +38,4 @@ sites/simpletest
 .idea/
 .sites/default/settings.php
 sites/default/settings.php
+.vs/
